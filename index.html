@@ -4,45 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Calmaria</title>
 </head>
 
 <body>
     <main>
         <header>
-            <nav>
+            <nav data-aos="fade-down">
                 <img src="./assets/logo.png" alt="logo">
                 <span class="linha"></span>
                 <ul>
-                    <li><a href="#nosso-espaco">Nosso espaço</a></li>
-                    <li><a href="#servico">Servicos</a></li>
-                    <li><a href="#contatos">Contato</a></li>
+                    <li><a class="smooth-scroll" href="#nosso-espaco">Nosso espaço</a></li>
+                    <li><a class="smooth-scroll" href="#servico">Serviços</a></li>
+                    <li><a class="smooth-scroll" href="#contatos">Contato</a></li>
                 </ul>
             </nav>
             <section id="home">
-
-                <div class="textos-home">
+                <div class="textos-home" data-aos="fade-right">
                     <h1>Boas-vindas ao seu refúgio de <span> paz e bem-estar</span></h1>
-                    <button class="btn-main">Quero relaxar</button>
+                    <button class="btn-main smooth-scroll-btn" type="button" aria-label="Ir para seção de relaxamento" data-target="#nosso-espaco">Quero relaxar</button>
                 </div>
-                <div class="img-home">
-                    <img src="/assets/home-image.png" alt="Mulher de bruços recebendo massagem nas costas">
+                <div class="img-home" data-aos="fade-left">
+                    <img src="./assets/home-image.png" alt="Mulher de bruços recebendo massagem nas costas">
                 </div>
-
             </section>
         </header>
+
         <section id="nosso-espaco">
             <div class="detalhes">
-                <div class="imgs-espaco">
-                    <img class="img-espaco" src="/assets/espaco-1.png"
+                <div class="imgs-espaco" data-aos="zoom-in">
+                    <img class="img-espaco" src="./assets/espaco-1.png"
                         alt="Espaço iluminado pelo sol com design futurista composto por piscina e plantas">
                 </div>
-                <div class="espaco-textos">
+                <div class="espaco-textos" data-aos="fade-up">
                     <h2 class="titulo">Tecnologia e natureza potencializando seu relaxamento</h2>
                     <p class="infos">Oferecemos equipamentos de ponta, produtos certificados e uma equipe de
                         profissionais ultra qualificados para dissipar seu estresse e ajudar você na busca por
@@ -52,11 +52,12 @@
             </div>
             <div class="detalhes">
                 <div class="imgs-espaco">
-                    <img class="img-espaco" src="/assets/espaco-2.png"
+                    <img class="img-espaco" src="./assets/espaco-2.png" data-aos="fade-right" data-aos-delay="100"
                         alt="Mulher sentada numa banheira com uma taça na mão">
-                    <img class="img-espaco" src="/assets/espaco-3.png" alt="Espaço com uma piscina e um sofá ao fundo">
+                    <img class="img-espaco" src="./assets/espaco-3.png" data-aos="fade-right"
+                        alt="Espaço com uma piscina e um sofá ao fundo">
                 </div>
-                <div class="espaco-textos">
+                <div class="espaco-textos" data-aos="fade-up">
                     <h2 class="titulo">Elevando seu bem-estar a um novo patamar</h2>
                     <p class="infos">No Calmaria Spa cada visita é uma jornada revigorante para mais serenidade e
                         disposição! Independente da sua rotina, vamos ajudar você a encontrar seu paraíso
@@ -65,86 +66,91 @@
                 </div>
             </div>
         </section>
-        <section id="servico">
 
+        <section id="servico">
             <div class="cards">
-                <div class="card">
-                    <img src="/assets/icon-massagem.png" alt="Icone de massagem">
+                <div class="card" data-aos="flip-left" data-aos-delay="0">
+                    <img src="./assets/icon-massagem.png" alt="Ícone de massagem">
                     <h3 class="card-titulo">Massagens</h3>
-                    <img src="./assets/Soft Star.png" alt="soft star">
+                    <img src="./assets/soft-star.png" alt="ícone estrela decorativa">
                     <p class="card-texto">Relaxantes, terapêuticas, desportivas e drenagens. Conte com nossos
                         terapeutas especializados para aliviar suas tensões, tratar dores e retenção de líquido
-                        através
-                        dessa técnica milenar tão eficiente para o organismo humano.</p>
+                        através dessa técnica milenar tão eficiente para o organismo humano.</p>
                 </div>
-                <div class="card">
-                    <img src="/assets/icon-tratamentos.png" alt="Icone de tratamento com figura de uma banheira">
+                <div class="card" data-aos="flip-left" data-aos-delay="200">
+                    <img src="./assets/icon-tratamentos.png" alt="Ícone de tratamento com figura de uma banheira">
                     <h3 class="card-titulo">Tratamentos Corporais</h3>
-                    <img src="./assets/Soft Star.png" alt="soft star">
+                    <img src="./assets/soft-star.png" alt="ícone estrela decorativa">
                     <p class="card-texto">Tratamos sua pele com gentileza através de esfoliações corporais suaves,
                         hidratações profundas do corpo e do rosto, além de limpeza facial. Você também pode
-                        desfrutar de
-                        banhos revigorantes de sais.</p>
+                        desfrutar de banhos revigorantes de sais.</p>
                 </div>
-                <div class="card">
-                    <img src="/assets/icon-dias-especiais.png" alt="Icone de Dias especiais com figura de produtos">
+                <div class="card" data-aos="flip-left" data-aos-delay="400">
+                    <img src="./assets/icon-dias-especiais.png" alt="Ícone de dias especiais com produtos">
                     <h3 class="card-titulo">Dias especiais</h3>
-                    <img src="./assets/Soft Star.png" alt="soft star">
+                    <img src="./assets/soft-star.png" alt="ícone estrela decorativa">
                     <p class="card-texto">Pacotes cuidadosamente elaborados, desde o "Dia Revitalizante" com
                         massagens e tratamentos faciais, até o "Dia Serenidade" com banhos terapêuticos e meditação.
                         Mime-se com momentos de refúgio de tranquilidade.</p>
                 </div>
             </div>
-
         </section>
+
         <section id="desconto">
-            <img src="/assets/mandala-esquerda.png" alt="Mandala lado esquerdo">
-            <div class="desconto-form">
+            <img src="./assets/mandala-esquerda.png" alt="Mandala lado esquerdo" data-aos="fade-right">
+            <div class="desconto-form" data-aos="zoom-in-up">
                 <h4>Inscreva-se para ganhar descontos!</h4>
                 <p>Cadastre seu email para receber descontos e novidades sobre o espaço e nossos serviços.</p>
-                <div class="input-btn">
-                    <input type="email">
-                    <button type="submit">Inscrever</button>
-                </div>
+                <form id="formDesconto">
+                    <div class="input-btn">
+                        <input type="email" id="emailDesconto" name="emailDesconto" placeholder="Digite seu email" required>
+                        <button type="submit" aria-label="Enviar inscrição">Inscrever</button>
+                    </div>
+                </form>
             </div>
-            <img src="/assets/mandala-direita.png" alt="Mandala lado direito">
+            <img src="./assets/mandala-direita.png" alt="Mandala lado direito" data-aos="fade-left">
         </section>
+
         <section id="contatos">
             <div class="contatos-imgs">
-                <img src="/assets/contato-img-1.png" alt="Homem deitado em banheira">
-                <img src="/assets/contato-img-2.png" alt="Mulher olhando para o horizonte dentro de uma banheira">
-                <img src="/assets/contato-img-3.png"
-                    alt="Visão superior de um livro nas mãos de uma pessoa dentro de uma banheira">
+                <img src="./assets/contato-img-1.png" alt="Homem deitado em banheira" data-aos="zoom-in-right" data-aos-delay="0">
+                <img src="./assets/contato-img-2.png" alt="Mulher olhando para o horizonte dentro de uma banheira" data-aos="zoom-in-right" data-aos-delay="150">
+                <img src="./assets/contato-img-3.png" alt="Pessoa lendo livro dentro de uma banheira" data-aos="zoom-in-right" data-aos-delay="300">
             </div>
-            <div class="contatos-form">
+            <div class="contatos-form" data-aos="fade-up">
                 <h4 class="titulo">Entre em contato</h4>
                 <p class="infos">Reserve seu horário, tire dúvidas ou proponha sugestões, nosso canal é aberto para
                     você!</p>
-                <form class="inputs">
+                
+                <form class="inputs" action="#" method="post" id="formContato">
                     <div class="form-group">
                         <label for="nomeContato">Nome</label>
-                        <input type="text" id="nomeContato" placeholder="Digite nome completo">
+                        <input type="text" id="nomeContato" name="nomeContato" placeholder="Digite nome completo" required>
                     </div>
                     <div class="form-group">
                         <label for="emailContato">Email</label>
-                        <input type="email" id="emailContato" placeholder="Digite seu email">
+                        <input type="email" id="emailContato" name="emailContato" placeholder="Digite seu email" required>
                     </div>
                     <div class="form-group">
                         <label for="telefoneContato">Telefone</label>
-                        <input type="text" id="telefoneContato" placeholder="(xx) xxxxx-xxxx">
+                        <input type="text" id="telefoneContato" name="telefoneContato" placeholder="(xx) xxxxx-xxxx">
                     </div>
                     <div class="form-group">
                         <label for="mensagemContato">Mensagem</label>
-                        <textarea type="text" id="mensagemContato" placeholder="Escreva sua mensagem"></textarea>
+                        <textarea id="mensagemContato" name="mensagemContato" placeholder="Escreva sua mensagem" required></textarea>
                     </div>
-                    <button class="btn">Enviar</button>
+                    <button class="btn" type="submit" aria-label="Enviar formulário de contato">Enviar</button>
                 </form>
             </div>
         </section>
+
         <footer>
             <small>Desenvolvido por Roberto Silva, através do curso sass-css-estilizando-site da Alura. Projeto fictício sem fins comerciais.</small>
         </footer>
     </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
