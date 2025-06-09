@@ -9,6 +9,10 @@
 
 Este repositório contém o projeto completo do site "Calmaria Spa", uma aplicação web full stack desenvolvida como parte dos estudos. O projeto começou como uma landing page estática e evoluiu para uma aplicação dinâmica com backend e integração com banco de dados, permitindo interações reais do usuário através de formulários.
 
+## 🖼️ Visualização do Projeto
+
+![Screenshot da página principal do Calmaria Spa](https://github.com/robertosilva19/Projeto-Calmaria-Spa---Full-Stack/blob/5e656dca7544acb688e690dcb48757f02f89d799/screenshots/Captura%20de%20tela%202025-06-09%20123435.png)
+
 ## ✨ Funcionalidades
 
 -   **Frontend:** Uma interface de usuário visualmente agradável e responsiva para um spa de relaxamento.
